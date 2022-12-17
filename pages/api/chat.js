@@ -16,6 +16,6 @@ export default async function handler(req, res) {
   } */
 
   const api = await initChatGPT()
-  let response = await api.sendMessage(req.body.message)
+  let response = await api.sendMessage("test")
   res.status(200).json(response.response)
 }
