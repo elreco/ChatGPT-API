@@ -1,4 +1,5 @@
 import { ChatGPTAPIBrowser } from 'chatgpt'
+require('puppeteer-extra-plugin-stealth/evasions/chrome.app');
 
 const initChatGPT = async () => {
   const api = new ChatGPTAPIBrowser({
